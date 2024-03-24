@@ -1,0 +1,15 @@
+cd /var/snap/docker/common/var-lib-docker
+
+-> first stop all the containers-> Command$ docker stop $(docker ps -aq) 
+ ->remove all containers at one time-> command$ docker rm $(docker ps -aq) 
+
+systemctl status containerd.service
+systemctl restart containerd.service
+
+
+Edit label :
+kubectl patch pod pod1 -p '{"metadata":{"labels":{"old_label_key":nulll, "azure":"devops"}}}'
+
+kubectl patch pod pod1 -p '{"metadata":{"labels":{"azure1":"devops1"}}}'
+
+rename labels in kubernetes
