@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bimageforkubernetesmarch31aks1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bimageforkubernetesmarch31aks1
+  template:
+    metadata:
+      labels:
+        app: bimageforkubernetesmarch31aks1 
+    spec:
+      containers:
+        - name: bimageforkubernetesmarch31aks1 
+          image: march30acr.azurecr.io/bimageforkubernetesmarch31aks1
+          ports:
+          - containerPort: 80
