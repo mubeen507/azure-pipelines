@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: bimageforkubernetesmarch31aks1 
-          image: march30acr.azurecr.io/bimageforkubernetesmarch31aks1
+          image: march30acr.azurecr.io/custom2nginxapril07-image1
           ports:
           - containerPort: 80
